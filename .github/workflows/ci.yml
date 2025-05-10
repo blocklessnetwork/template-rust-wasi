@@ -17,5 +17,6 @@ jobs:
           value: "v2.0.0"
       - name: Validate
         run: |
+          find ./
           cat Cargo.toml
      
