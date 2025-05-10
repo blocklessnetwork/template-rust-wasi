@@ -15,7 +15,7 @@ jobs:
           file: "Cargo.toml"
           key: "version"
           value: "v2.0.0"
-      - name:Validate
+      - name: Validate
         run: |
           cat Cargo.toml
      
