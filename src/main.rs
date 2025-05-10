@@ -1,13 +1,7 @@
 // Entry point to our WASI application
 
-use std::io::Write;
 
 fn main() {
-	let mut file = std::fs::OpenOptions::new()
-		.write(true)
-		.create(true)
-		.open("output.txt")
-		.expect("Failed to open file");
-	file.write_all(b"Hello World, WASI!")
-		.expect("Failed to write to file");
+	let vec = Vec::<u8>::with_capacity(1024*1024*5);
+	println!("Allocated 5MB of memory: {}", vec.capacity());
 }
