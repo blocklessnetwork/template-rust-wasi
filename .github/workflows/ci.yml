@@ -13,7 +13,7 @@ jobs:
         uses: blocklessnetwork/toml-editor@master
         with:
           file: "Cargo.toml"
-          key: "version"
+          key: "package.version"
           value: "v2.0.0"
       - name: Validate
         run: |
